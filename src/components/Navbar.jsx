@@ -13,7 +13,7 @@ useEffect(() => {
 }, [darkMode])
   return (
     <nav>
-      <div className='flex justify-between items-center px-6 md:px-12 py-4 w-screen'>
+      <div className='flex justify-between items-center px-6 md:px-12 py-2 w-full'>
         
         <div className={`text-gray-800 font-bold font-display italic tracking-wider text-lg cursor-pointer dark:text-gray-200`}>
           <span className='text-pink-500'>A</span><span>yesha Afzal</span>
