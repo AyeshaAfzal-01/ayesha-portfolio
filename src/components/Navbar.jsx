@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import ThemeToggle from "./ThemeToggle";
 import assets from "../assets/assets";
+import { HiMenu } from "react-icons/hi";
 
 const Navbar = () => {
   const [showHamburgerItems, setShowHamburgerItems] = useState(false)
@@ -25,11 +26,10 @@ const Navbar = () => {
           <ThemeToggle />
 
           {/* Mobile Hamburger */}
-          <img onClick={() => setShowHamburgerItems(!showHamburgerItems)}
-            src={assets.hamburger_icon}
-            alt="Menu"
-            className='w-6 h-6 cursor-pointer md:hidden'
-          />
+         <HiMenu
+  className="w-6 h-6 cursor-pointer text-black dark:text-white md:hidden"
+  onClick={() => setShowHamburgerItems(!showHamburgerItems)}
+/>
         </div>
 
       </div>
