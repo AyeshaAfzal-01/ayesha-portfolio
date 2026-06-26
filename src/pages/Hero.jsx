@@ -5,7 +5,7 @@ import { MdEmail } from "react-icons/md";
 
 const Hero = () => {
   return (
-    <div>
+    <section id="/">
       {/* Hero Section */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 min-h-[70vh]">
 
@@ -18,7 +18,7 @@ const Hero = () => {
             <p className="text-pink-500 pb-1">_____</p>
           </div>
 
-          <div className="mt-4 w-60 min-h-55 md:min-h-65">
+          <div className="mt-4 lg:w-60 min-h-55 md:min-h-65">
             <div className="text-5xl font-semibold md:text-5xl lg:text-6xl italic font-display mb-1">
               Hello, I'm
             </div>
@@ -41,7 +41,7 @@ const Hero = () => {
             />
           </div>
 
-          <p className="text-gray-500 max-w-80 mt-4 text-sm md:text-base leading-relaxed">
+          <p className="text-gray-500 max-w-80 mt-4 text-sm md:text-base font-display leading-relaxed">
             I make the web <span className="italic">feel</span> something.
             Interfaces that stop you mid-scroll. Code that ships on time.
             Design with a <span className="italic">point of view.</span>
@@ -89,7 +89,7 @@ const Hero = () => {
       </div>
 
       {/* Skills Ticker */}
-      <div className="overflow-hidden border-y border-gray-300 py-4 mt-8 text-gray-400 font-display">
+      <div className="overflow-hidden border-y border-gray-300 py-4 mt-8 -mx-16 text-gray-400 font-display">
         <div className="flex whitespace-nowrap animate-marquee">
 
           <div className="flex gap-8 md:gap-12 text-xs md:text-sm italic">
@@ -140,7 +140,7 @@ const Hero = () => {
 
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
