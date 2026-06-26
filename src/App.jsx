@@ -9,10 +9,10 @@ function App() {
   return (
     <div className="min-h-screen bg-white text-black dark:bg-black dark:text-white ">
      <Navbar/>
-     <div className="mx-14 my-8">
+     <div className="md:mx-14 mx-4  mt-8 ">
     <Hero/>
-    <Work/>
     <About/>
+    <Work/>
     <Contact/>
      </div>
      </div>

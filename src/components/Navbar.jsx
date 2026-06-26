@@ -16,7 +16,7 @@ const Navbar = () => {
           className={`text-gray-800 font-bold font-display italic tracking-wider text-lg cursor-pointer dark:text-gray-200`}
         >
           <a href="/">
-            <span className="text-pink-500">A</span>
+            <span className="text-primary">A</span>
             <span>yesha Afzal</span>
           </a>
         </div>
@@ -24,18 +24,20 @@ const Navbar = () => {
         <div className="flex items-center gap-4">
           {/* Desktop Menu */}
           <ul className="hidden md:flex font-body text-gray-500 dark:text-gray-400 text-xs tracking-wider cursor-pointer gap-6">
+              <a
+              href="#about"
+              className="hover:text-gray-800 hover:dark:text-gray-300"
+            >
+              ABOUT
+            </a>
+               
             <a
               href="#work"
               className="hover:text-gray-800 hover:dark:text-gray-300"
             >
               WORK
             </a>
-            <a
-              href="#about"
-              className="hover:text-gray-800 hover:dark:text-gray-300"
-            >
-              ABOUT
-            </a>
+        
             <a
               href="#contact"
               className="hover:text-gray-800 hover:dark:text-gray-300"
