@@ -36,10 +36,11 @@ html, body {
 @theme {
   --font-display: "Cormorant Garamond", serif;
   --font-body: "DM Sans", sans-serif;
-  --color-primary: #FF3CAC;
-  --color-primary-dark: #e610a2;
-  --color-primary-border-light: #f768f3;
-  --color-secondary: #784DFF;
+   --color-secondary: #FF3CAC;
+  --color-primary: #6e4bab;
+  --color-primary-dark: #5c2cb0;
+  --color-primary-border-light: #784DFF;
+  --color-secondary: #f768f3;
   --color-mint: #00D9A3;
   --color-white: #F5F0EB;
   --color-dark: #0D0C0A;

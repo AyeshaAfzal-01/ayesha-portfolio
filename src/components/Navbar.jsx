@@ -16,7 +16,7 @@ const Navbar = () => {
           className={`text-gray-800 font-bold font-display italic tracking-wider text-lg cursor-pointer dark:text-gray-200`}
         >
           <a href="/">
-            <span className="text-primary">A</span>
+            <span className="text-primary-border-light">A</span>
             <span>yesha Afzal</span>
           </a>
         </div>

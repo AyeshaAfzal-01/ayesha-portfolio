@@ -14,7 +14,7 @@ const ThemeToggle = () => {
   return (
     <button
       onClick={toggleTheme}
-      className="relative flex items-center w-20 h-6 border border-gray-400 hover:border-pink-400 font-body rounded-full px-2"
+      className="relative flex items-center w-20 h-6 border border-gray-400 hover:border-primary-border-light font-body rounded-full px-2"
     >
       <div
         className={`w-3 h-3 px-1 rounded-full transition-all duration-300
@@ -22,7 +22,7 @@ const ThemeToggle = () => {
       ></div>
 
     <span
-  className={`w-full text-center text-xs font-medium hover:text-pink-400 ${
+  className={`w-full text-center text-xs font-medium hover:text-primary-border-light ${
     darkMode ? "text-white" : "text-gray-800"
   }`}
 >
