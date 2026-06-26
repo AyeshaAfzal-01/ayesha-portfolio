@@ -37,11 +37,14 @@ html, body {
   --font-display: "Cormorant Garamond", serif;
   --font-body: "DM Sans", sans-serif;
    --color-secondary: #FF3CAC;
-  --color-primary: #6e4bab;
-  --color-primary-dark: #5c2cb0;
+  --color-primary: #5c2cb0;
+  --color-primary-dark: #5b14b8;
   --color-primary-border-light: #784DFF;
   --color-secondary: #f768f3;
   --color-mint: #00D9A3;
   --color-white: #F5F0EB;
   --color-dark: #0D0C0A;
+  --color-offwhite: #fbf7f5;
+  --color-dark-gray: #0d0b0b;
+  --color-gray-light: #5e5c5c;
 }
