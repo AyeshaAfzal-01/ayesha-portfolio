@@ -33,6 +33,31 @@ html, body {
 
 @variant dark (&:where(.dark, .dark *));
 
+/* Light mode autofill */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus {
+  -webkit-text-fill-color: #0d0b0b !important;
+  -webkit-box-shadow: 0 0 0px 1000px #fbf7f5 inset !important;
+  box-shadow: 0 0 0px 1000px #fbf7f5 inset !important;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+/* Dark mode autofill */
+.dark input:-webkit-autofill,
+.dark input:-webkit-autofill:hover,
+.dark input:-webkit-autofill:focus,
+.dark textarea:-webkit-autofill,
+.dark textarea:-webkit-autofill:hover,
+.dark textarea:-webkit-autofill:focus {
+  -webkit-text-fill-color: #f3f4f6 !important;
+  -webkit-box-shadow: 0 0 0px 1000px #0d0b0b inset !important;
+  box-shadow: 0 0 0px 1000px #0d0b0b inset !important;
+}
+
 @theme {
   --font-display: "Cormorant Garamond", serif;
   --font-body: "DM Sans", sans-serif;
