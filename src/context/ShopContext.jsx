@@ -1,17 +1,34 @@
 import { createContext, useEffect, useState } from "react";
-import { useNavigate } from 'react-router-dom'
 
-export const ShopContext = createContext()
+export const ShopContext = createContext();
 
 const ShopContextProvider = (props) => {
-    const [darkMode, setDarkMode] = useState(false)
-    const value = {
-        darkMode,
-        setDarkMode,
-    }
-    return (
-        <ShopContext.Provider value={value}>{props.children}</ShopContext.Provider>
-    )
-}
+  // Default to dark; read from localStorage if available
+  const [darkMode, setDarkMode] = useState(() => {
+    const saved = localStorage.getItem("theme");
+    if (saved === "light") return false;
+    return true; // dark by default
+  });
 
-export default ShopContextProvider
+  // Sync the <html> class and localStorage whenever darkMode changes
+  useEffect(() => {
+    if (darkMode) {
+      document.documentElement.classList.add("dark");
+      localStorage.setItem("theme", "dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+      localStorage.setItem("theme", "light");
+    }
+  }, [darkMode]);
+
+  const value = {
+    darkMode,
+    setDarkMode,
+  };
+
+  return (
+    <ShopContext.Provider value={value}>{props.children}</ShopContext.Provider>
+  );
+};
+
+export default ShopContextProvider;
