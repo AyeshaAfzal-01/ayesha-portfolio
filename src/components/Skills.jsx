@@ -17,9 +17,10 @@ const TAB_DATA = [
 
         <div>
           <li>TailwindCSS</li>
+          <li>PostgreSQL</li>
+           <li>JavaScript</li>
           <li>AI & ML</li>
           <li>Python</li>
-          <li>JavaScript</li>
           <li>NumPy</li>
         </div>
 
@@ -28,7 +29,6 @@ const TAB_DATA = [
           <li>Scikit-learn</li>
           <li>Matplotlib & Seaborn</li>
           <li>Git & GitHub</li>
-          <li>PostgreSQL</li>
         </div>
       </ul>
     ),
