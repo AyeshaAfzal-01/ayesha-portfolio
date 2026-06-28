@@ -5,7 +5,7 @@ import Skills from "../components/Skills";
 const About = () => {
   return (
     <section
-      id="about"
+      id="about" className="scroll-mt-20"
       className="w-full py-12 md:py-16"
     >
       <div className="flex flex-col gap-8">

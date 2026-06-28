@@ -40,7 +40,7 @@ const Contact = () => {
 
   return (
     <section
-      id="contact"
+      id="contact" className="scroll-mt-20"
       className="grid md:grid-cols-2 my-12 pt-24 gap-8 relative font-body"
     >
       <div className="absolute top-3/4 -left-4 w-80 h-80 rounded-full bg-[radial-gradient(circle,_#5c2cb0,_transparent)] blur-2xl transform -translate-x-1/2 -translate-y-1/2 z-0"></div>

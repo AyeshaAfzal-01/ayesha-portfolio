@@ -5,7 +5,7 @@ import { MdEmail } from "react-icons/md";
 
 const Hero = () => {
   return (
-    <section id="/">
+    <section id="/" className="scroll-mt-20">
       {/* Hero Section */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-12 min-h-[50vh] xl:min-h-[70vh]">
 
