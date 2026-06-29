@@ -114,17 +114,17 @@ const Skills = () => {
       <div className="mt-8 overflow-x-auto scrollbar-hide">
         <div className="flex w-max gap-4">
           <TabButton
-            selectTab={() => handleTabChange("skills")}
-            active={tab === "skills"}
-          >
-            Skills
-          </TabButton>
-
-          <TabButton
             selectTab={() => handleTabChange("education")}
             active={tab === "education"}
           >
             Education
+          </TabButton>
+
+            <TabButton
+            selectTab={() => handleTabChange("skills")}
+            active={tab === "skills"}
+          >
+            Skills
           </TabButton>
 
           <TabButton
