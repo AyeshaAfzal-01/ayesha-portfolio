@@ -103,7 +103,7 @@ const Work = () => {
 
   return (
     <section id="work" className="scroll-mt-20">
-      <h2 className="text-center text-4xl md:text-5xl mt-20 mb-4 font-bold text-dark font-display dark:text-white">My <span className="text-primary">P</span>rojects</h2>
+      <h2 className="text-center text-4xl md:text-5xl mt-20 mb-2 font-bold text-dark font-display dark:text-white">My <span className="text-primary">P</span>rojects</h2>
       <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
         <ProjectTag
           onClick={handleTagChange}
