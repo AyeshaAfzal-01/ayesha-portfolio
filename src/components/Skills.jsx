@@ -25,19 +25,19 @@ const TAB_DATA = [
           <li>Express.js</li>
           <li>React.js</li>
           <li>Next.js</li>
-           <li>TailwindCSS</li>
           <li>MongoDB</li>
         </ul>
 
         <ul className="list-disc space-y-1">
+           <li>TailwindCSS</li>
           <li>JavaScript</li>
           <li>PostgreSQL</li>
           <li>AI & ML</li>
           <li>Python</li>
-          <li>NumPy</li>
         </ul>
 
         <ul className="list-disc space-y-1">
+             <li>NumPy</li>
           <li>Pandas</li>
           <li>Scikit-learn</li>
           <li>Matplotlib & Seaborn</li>
