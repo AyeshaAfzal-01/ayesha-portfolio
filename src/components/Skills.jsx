@@ -25,13 +25,13 @@ const TAB_DATA = [
           <li>Express.js</li>
           <li>React.js</li>
           <li>Next.js</li>
+           <li>TailwindCSS</li>
           <li>MongoDB</li>
         </ul>
 
         <ul className="list-disc space-y-1">
-          <li>TailwindCSS</li>
-          <li>PostgreSQL</li>
           <li>JavaScript</li>
+          <li>PostgreSQL</li>
           <li>AI & ML</li>
           <li>Python</li>
           <li>NumPy</li>
@@ -81,7 +81,7 @@ const TAB_DATA = [
 ];
 
 const Skills = () => {
-  const [tab, setTab] = useState("education");
+  const [tab, setTab] = useState("skills");
   const [isPending, startTransition] = useTransition();
 
   const handleTabChange = (id) => {
