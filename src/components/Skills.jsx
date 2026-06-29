@@ -15,57 +15,39 @@ const TAB_DATA = [
     ),
   },
     {
-    title: "Skills",
-    id: "skills",
-    content: (
-      <ul className="list-disc pl-5 grid grid-cols-2 lg:grid-cols-3 gap-4">
-        <div>
+  title: "Skills",
+  id: "skills",
+  content: (
+    <div className="overflow-x-auto scrollbar-hide scroll-smooth">
+      <div className="grid grid-cols-3 min-w-115 md:min-w-155">
+        <ul className="list-disc pl-5 space-y-1">
           <li>Node.js</li>
           <li>Express.js</li>
           <li>React.js</li>
           <li>Next.js</li>
           <li>MongoDB</li>
-        </div>
+        </ul>
 
-        <div>
+        <ul className="list-disc space-y-1">
           <li>TailwindCSS</li>
           <li>PostgreSQL</li>
           <li>JavaScript</li>
           <li>AI & ML</li>
           <li>Python</li>
           <li>NumPy</li>
-        </div>
+        </ul>
 
-        <div>
+        <ul className="list-disc space-y-1">
           <li>Pandas</li>
           <li>Scikit-learn</li>
           <li>Matplotlib & Seaborn</li>
           <li>Git & GitHub</li>
-        </div>
-      </ul>
-    ),
-  },
-
-  {
-    title: "Certifications",
-    id: "certifications",
-    content: (
-      <ul className="list-disc pl-5 grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div className="space-y-2">
-          <li>Intro to Machine Learning, Kaggle</li>
-          <li>Pandas, Kaggle</li>
-          <li>Intro to Programming, Kaggle</li>
-          <li>Python, Kaggle</li>
-        </div>
-
-        <div className="space-y-2">
-          <li>Python Data Structures, ULSA</li>
-          <li>Programming for Everybody, ULSA</li>
-          <li>Developing Front-End Apps with React, IBM</li>
-        </div>
-      </ul>
-    ),
-  },
+        </ul>
+      </div>
+    </div>
+  ),
+},
+{ title: "Certifications", id: "certifications", content: ( <ul className="list-disc pl-5 grid grid-cols-1 md:grid-cols-2 gap-6"> <div className="space-y-2"> <li>Intro to Machine Learning, Kaggle</li> <li>Pandas, Kaggle</li> <li>Intro to Programming, Kaggle</li> <li>Python, Kaggle</li> </div> <div className="space-y-2"> <li>Python Data Structures, ULSA</li> <li>Programming for Everybody, ULSA</li> <li>Developing Front-End Apps with React, IBM</li> </div> </ul> ), },
 
   {
     title: "Experience",
