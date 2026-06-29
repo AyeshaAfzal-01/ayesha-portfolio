@@ -3,6 +3,18 @@ import TabButton from "./TabButton";
 
 const TAB_DATA = [
   {
+    title: "Education",
+    id: "education",
+    content: (
+      <ul className="list-disc pl-5 space-y-1">
+        <li>BS Information Technology</li>
+        <li>Punjab University College of Information Technology</li>
+        <li>CGPA: 3.77/4.00</li>
+        <li>Sep 2023 - Present</li>
+      </ul>
+    ),
+  },
+    {
     title: "Skills",
     id: "skills",
     content: (
@@ -30,19 +42,6 @@ const TAB_DATA = [
           <li>Matplotlib & Seaborn</li>
           <li>Git & GitHub</li>
         </div>
-      </ul>
-    ),
-  },
-
-  {
-    title: "Education",
-    id: "education",
-    content: (
-      <ul className="list-disc pl-5 space-y-1">
-        <li>BS Information Technology</li>
-        <li>Punjab University College of Information Technology</li>
-        <li>CGPA: 3.77/4.00</li>
-        <li>Sep 2023 - Present</li>
       </ul>
     ),
   },
