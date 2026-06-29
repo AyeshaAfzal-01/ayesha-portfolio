@@ -73,3 +73,13 @@ textarea:-webkit-autofill:focus {
   --color-dark-gray: #0d0b0b;
   --color-gray-light: #5e5c5c;
 }
+
+/* Hide scrollbar while allowing scrolling */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

@@ -43,10 +43,10 @@ const Contact = () => {
       id="contact" className="scroll-mt-20"
       className="grid md:grid-cols-2 my-12 pt-24 gap-8 relative font-body"
     >
-      <div className="absolute top-3/4 -left-4 w-80 h-80 rounded-full bg-[radial-gradient(circle,_#5c2cb0,_transparent)] blur-2xl transform -translate-x-1/2 -translate-y-1/2 z-0"></div>
+      <div className="absolute top-3/4 -left-4 w-80 h-80 rounded-full bg-[radial-gradient(circle,#5c2cb0,transparent)] blur-2xl transform md:flex hidden -translate-x-1/2 -translate-y-1/2 z-0"></div>
 
       <div className="z-10">
-        <h5 className="text-5xl font-bold text-dark font-display dark:text-white my-2">
+        <h5 className="text-4xl md:text-5xl font-bold text-dark font-display dark:text-white my-2">
           Let's <span className="text-primary">C</span>onnect
         </h5>
 

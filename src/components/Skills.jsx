@@ -18,7 +18,7 @@ const TAB_DATA = [
         <div>
           <li>TailwindCSS</li>
           <li>PostgreSQL</li>
-           <li>JavaScript</li>
+          <li>JavaScript</li>
           <li>AI & ML</li>
           <li>Python</li>
           <li>NumPy</li>
@@ -111,45 +111,47 @@ const Skills = () => {
 
   return (
     <div className="text-gray-800 dark:text-gray-400">
-      {/* Responsive Tabs */}
-      <div className="flex flex-wrap gap-4 mt-8">
-        <TabButton
-          selectTab={() => handleTabChange("skills")}
-          active={tab === "skills"}
-        >
-          Skills
-        </TabButton>
+      {/* Horizontally Scrollable Tabs */}
+      <div className="mt-8 overflow-x-auto scrollbar-hide">
+        <div className="flex w-max gap-4">
+          <TabButton
+            selectTab={() => handleTabChange("skills")}
+            active={tab === "skills"}
+          >
+            Skills
+          </TabButton>
 
-        <TabButton
-          selectTab={() => handleTabChange("education")}
-          active={tab === "education"}
-        >
-          Education
-        </TabButton>
+          <TabButton
+            selectTab={() => handleTabChange("education")}
+            active={tab === "education"}
+          >
+            Education
+          </TabButton>
 
-        <TabButton
-          selectTab={() => handleTabChange("certifications")}
-          active={tab === "certifications"}
-        >
-          Certifications
-        </TabButton>
+          <TabButton
+            selectTab={() => handleTabChange("certifications")}
+            active={tab === "certifications"}
+          >
+            Certifications
+          </TabButton>
 
-        <TabButton
-          selectTab={() => handleTabChange("experience")}
-          active={tab === "experience"}
-        >
-          Experience
-        </TabButton>
+          <TabButton
+            selectTab={() => handleTabChange("experience")}
+            active={tab === "experience"}
+          >
+            Experience
+          </TabButton>
 
-        <TabButton
-          selectTab={() => handleTabChange("achivements")}
-          active={tab === "achivements"}
-        >
-          Achievements
-        </TabButton>
+          <TabButton
+            selectTab={() => handleTabChange("achivements")}
+            active={tab === "achivements"}
+          >
+            Achievements
+          </TabButton>
+        </div>
       </div>
 
-      <div className="mt-8 break-words">
+      <div className="mt-8 wrap-break-words">
         {TAB_DATA.find((t) => t.id === tab).content}
       </div>
     </div>
