@@ -91,7 +91,7 @@ const Skills = () => {
   };
 
   return (
-    <div className="text-gray-800 dark:text-gray-400">
+    <div className="text-gray-800 dark:text-gray-400 font-body">
       {/* Horizontally Scrollable Tabs */}
       <div className="mt-8 overflow-x-auto scrollbar-hide">
         <div className="flex w-max gap-4">
