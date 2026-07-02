@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <section id="/" className="scroll-mt-20">
       {/* Hero Section */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-12 min-h-[50vh] xl:min-h-[70vh]">
+      <div className="grid grid-cols-1 md:grid-cols-2 font-body gap-6 lg:gap-12 min-h-[50vh] xl:min-h-[70vh]">
 
         {/* Left Side */}
         <div className="flex flex-col justify-center">
