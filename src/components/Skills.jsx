@@ -50,14 +50,14 @@ const TAB_DATA = [
 { title: "Certifications", id: "certifications", content: ( 
     <div className="overflow-x-auto scrollbar-hide scroll-smooth">
     <div className="grid grid-cols-2 gap-6 min-w-140">
-      <ul className="list-disc pl-5 space-y-2 text-sm leading-5 md:text-10 md:leading-3">
+      <ul className="list-disc pl-5 space-y-1 text-sm leading-5 md:text-10 md:leading-3">
         <li>Intro to Machine Learning, Kaggle</li>
         <li>Pandas, Kaggle</li>
         <li>Intro to Programming, Kaggle</li>
         <li>Python, Kaggle</li>
       </ul>
 
-      <ul className="list-disc pl-5 space-y-2 text-sm leading-5 md:text-10 md:leading-3">
+      <ul className="list-disc pl-5 space-y-1 text-sm leading-5 md:text-10 md:leading-3">
         <li>Python Data Structures, ULSA</li>
         <li>Programming for Everybody, ULSA</li>
         <li>Developing Front-End Apps with React, IBM</li>
