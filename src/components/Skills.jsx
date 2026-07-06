@@ -14,57 +14,62 @@ const TAB_DATA = [
       </ul>
     ),
   },
-    {
-  title: "Skills",
-  id: "skills",
-  content: (
-    <div className="overflow-x-auto scrollbar-hide scroll-smooth">
-      <div className="grid grid-cols-3 min-w-115 md:min-w-155">
-        <ul className="list-disc pl-5 space-y-1 text-sm leading-5 md:text-10 md:leading-3">
-          <li>Node.js</li>
-          <li>Express.js</li>
-          <li>React.js</li>
-          <li>Next.js</li>
-          <li>MongoDB</li>
-        </ul>
+  {
+    title: "Skills",
+    id: "skills",
+    content: (
+      <div className="overflow-x-auto scrollbar-hide scroll-smooth">
+        <div className="grid grid-cols-3 min-w-115 md:min-w-155">
+          <ul className="list-disc pl-5 space-y-1 text-sm leading-5 md:text-10 md:leading-3">
+            <li>Node.js</li>
+            <li>Express.js</li>
+            <li>React.js</li>
+            <li>Next.js</li>
+            <li>MongoDB</li>
+          </ul>
 
-        <ul className="list-disc space-y-1 text-sm leading-5 md:text-10 md:leading-3">
-           <li>TailwindCSS</li>
-          <li>JavaScript</li>
-          <li>PostgreSQL</li>
-          <li>AI & ML</li>
-          <li>Python</li>
-        </ul>
+          <ul className="list-disc space-y-1 text-sm leading-5 md:text-10 md:leading-3">
+            <li>TailwindCSS</li>
+            <li>JavaScript</li>
+            <li>PostgreSQL</li>
+            <li>AI & ML</li>
+            <li>Python</li>
+          </ul>
 
-        <ul className="list-disc space-y-1 text-sm leading-5 md:text-10 md:leading-3">
-             <li>NumPy</li>
-          <li>Pandas</li>
-          <li>Scikit-learn</li>
-          <li>Matplotlib & Seaborn</li>
-          <li>Git & GitHub</li>
-        </ul>
+          <ul className="list-disc space-y-1 text-sm leading-5 md:text-10 md:leading-3">
+            <li>NumPy</li>
+            <li>Pandas</li>
+
+            <li>Matplotlib & Seaborn</li>
+            <li>Scikit-learn</li>
+            <li>Git & GitHub</li>
+          </ul>
+        </div>
       </div>
-    </div>
-  ),
-},
-{ title: "Certifications", id: "certifications", content: ( 
-    <div className="overflow-x-auto scrollbar-hide scroll-smooth">
-    <div className="grid grid-cols-2 gap-6 min-w-140">
-      <ul className="list-disc pl-5 space-y-1 text-sm leading-5 md:text-10 md:leading-3">
-        <li>Intro to Machine Learning, Kaggle</li>
-        <li>Pandas, Kaggle</li>
-        <li>Intro to Programming, Kaggle</li>
-        <li>Python, Kaggle</li>
-      </ul>
+    ),
+  },
+  {
+    title: "Certifications",
+    id: "certifications",
+    content: (
+      <div className="overflow-x-auto scrollbar-hide scroll-smooth">
+        <div className="grid grid-cols-2 gap-6 min-w-140">
+          <ul className="list-disc pl-5 space-y-1 text-sm leading-5 md:text-10 md:leading-3">
+            <li>Intro to Machine Learning, Kaggle</li>
+            <li>Pandas, Kaggle</li>
+            <li>Intro to Programming, Kaggle</li>
+            <li>Python, Kaggle</li>
+          </ul>
 
-      <ul className="list-disc pl-5 space-y-1 text-sm leading-5 md:text-10 md:leading-3">
-        <li>Python Data Structures, ULSA</li>
-        <li>Programming for Everybody, ULSA</li>
-        <li>Developing Front-End Apps with React, IBM</li>
-      </ul>
-    </div>
-  </div>
- ), },
+          <ul className="list-disc pl-5 space-y-1 text-sm leading-5 md:text-10 md:leading-3">
+            <li>Python Data Structures, ULSA</li>
+            <li>Programming for Everybody, ULSA</li>
+            <li>Developing Front-End Apps with React, IBM</li>
+          </ul>
+        </div>
+      </div>
+    ),
+  },
 
   {
     title: "Experience",
@@ -112,14 +117,13 @@ const Skills = () => {
       {/* Horizontally Scrollable Tabs */}
       <div className="mt-8 overflow-x-auto scrollbar-hide">
         <div className="flex w-max gap-4">
-
-            <TabButton
+          <TabButton
             selectTab={() => handleTabChange("skills")}
             active={tab === "skills"}
           >
             Skills
           </TabButton>
-           <TabButton
+          <TabButton
             selectTab={() => handleTabChange("education")}
             active={tab === "education"}
           >
