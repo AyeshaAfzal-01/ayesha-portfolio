@@ -6,7 +6,7 @@ const TAB_DATA = [
     title: "Education",
     id: "education",
     content: (
-      <ul className="list-disc pl-5 space-y-1">
+      <ul className="list-disc pl-5 space-y-1 text-sm leading-5 md:text-10 md:leading-3">
         <li>BS Information Technology</li>
         <li>Punjab University College of Information Technology</li>
         <li>CGPA: 3.77/4.00</li>
@@ -20,7 +20,7 @@ const TAB_DATA = [
   content: (
     <div className="overflow-x-auto scrollbar-hide scroll-smooth">
       <div className="grid grid-cols-3 min-w-115 md:min-w-155">
-        <ul className="list-disc pl-5 space-y-1">
+        <ul className="list-disc pl-5 space-y-1 text-sm leading-5 md:text-10 md:leading-3">
           <li>Node.js</li>
           <li>Express.js</li>
           <li>React.js</li>
@@ -28,7 +28,7 @@ const TAB_DATA = [
           <li>MongoDB</li>
         </ul>
 
-        <ul className="list-disc space-y-1">
+        <ul className="list-disc space-y-1 text-sm leading-5 md:text-10 md:leading-3">
            <li>TailwindCSS</li>
           <li>JavaScript</li>
           <li>PostgreSQL</li>
@@ -36,7 +36,7 @@ const TAB_DATA = [
           <li>Python</li>
         </ul>
 
-        <ul className="list-disc space-y-1">
+        <ul className="list-disc space-y-1 text-sm leading-5 md:text-10 md:leading-3">
              <li>NumPy</li>
           <li>Pandas</li>
           <li>Scikit-learn</li>
@@ -47,13 +47,30 @@ const TAB_DATA = [
     </div>
   ),
 },
-{ title: "Certifications", id: "certifications", content: ( <ul className="list-disc pl-5 grid grid-cols-1 md:grid-cols-2 gap-6"> <div className="space-y-2"> <li>Intro to Machine Learning, Kaggle</li> <li>Pandas, Kaggle</li> <li>Intro to Programming, Kaggle</li> <li>Python, Kaggle</li> </div> <div className="space-y-2"> <li>Python Data Structures, ULSA</li> <li>Programming for Everybody, ULSA</li> <li>Developing Front-End Apps with React, IBM</li> </div> </ul> ), },
+{ title: "Certifications", id: "certifications", content: ( 
+    <div className="overflow-x-auto scrollbar-hide scroll-smooth">
+    <div className="grid grid-cols-2 gap-6 min-w-140">
+      <ul className="list-disc pl-5 space-y-2 text-sm leading-5 md:text-10 md:leading-3">
+        <li>Intro to Machine Learning, Kaggle</li>
+        <li>Pandas, Kaggle</li>
+        <li>Intro to Programming, Kaggle</li>
+        <li>Python, Kaggle</li>
+      </ul>
+
+      <ul className="list-disc pl-5 space-y-2 text-sm leading-5 md:text-10 md:leading-3">
+        <li>Python Data Structures, ULSA</li>
+        <li>Programming for Everybody, ULSA</li>
+        <li>Developing Front-End Apps with React, IBM</li>
+      </ul>
+    </div>
+  </div>
+ ), },
 
   {
     title: "Experience",
     id: "experience",
     content: (
-      <ul className="list-disc pl-5 space-y-1">
+      <ul className="list-disc pl-5 space-y-1 text-sm leading-5 md:text-10 md:leading-3">
         <li>Teaching Assistant - Programming Fundamentals</li>
         <li>PUCIT</li>
         <li>Feb 2026 - May 2026</li>
@@ -65,7 +82,7 @@ const TAB_DATA = [
     title: "Achievements",
     id: "achivements",
     content: (
-      <ul className="list-disc pl-5 space-y-3">
+      <ul className="list-disc pl-5 space-y-3 text-sm leading-5 md:text-10 md:leading-3">
         <li>
           Participated in Gemini 3 Hackathon (Devpost) and built a Life
           Screenshot Organizer project under time constraints.
